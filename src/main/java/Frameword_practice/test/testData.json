@@ -1,0 +1,10 @@
+{
+	"name":"arun",
+	"age":"28",
+	"job":"QA",
+	"address":
+	{
+		"new":"chennai",
+		"old":"devakottai"
+	}
+}

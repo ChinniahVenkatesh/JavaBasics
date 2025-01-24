@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome" />
+<listeners>
+<listener class-name= "Listners.testListners"/>
+</listeners>
+  <test thread-count="2" name="Test" parallel="classes">
+  <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Frameword_practice.test.TC002"/>
+      <class name="Frameword_practice.test.TC001">
+      <methods>
+      <exclude name="TS002"/>
+      </methods>
+      </class>
+      <class name ="Frameword_practice.test.TestBase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
